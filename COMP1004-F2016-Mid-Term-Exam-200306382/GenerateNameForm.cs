@@ -16,5 +16,37 @@ namespace COMP1004_F2016_Mid_Term_Exam_200306382
         {
             InitializeComponent();
         }
+
+        public void GenerateNames ()
+        {
+            
+            Random rnd = new Random();
+            
+        }
+
+        private void GenerateButton_Click(object sender, EventArgs e)
+        {
+            GenerateNames();
+            Program.character.FirstName = FirstNameTextBox.Text;
+            Program.character.LastName = LastNameTextBox.Text;
+            
+        }
+
+        private void GenerateNameForm_Load(object sender, EventArgs e)
+        {
+            GenerateNames();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            AbilityGeneratorForm AbilityGeneratorForm = new AbilityGeneratorForm();
+            AbilityGeneratorForm.Show();
+            this.Hide();
+        }
     }
 }

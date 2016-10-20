@@ -38,5 +38,18 @@ namespace COMP1004_F2016_Mid_Term_Exam_200306382
         {
             Application.Exit();
         }
+
+        private void FinalForm_Load(object sender, EventArgs e)
+        {
+            Program.character.FirstName = firstNameTextBox.Text;
+            Program.character.LastName = LastNameTextBox.Text;
+            Program.character.Race = RaceTextBox.Text;
+            Program.character.Strength = StrengthTextBox.Text;
+            Program.character.Dexterity = DexterityTextBox.Text;
+            Program.character.Constitution = ConstitutionTextBox.Text;
+            Program.character.Intelligence = IntelligenceTextBox.Text;
+            Program.character.Wisdom = WisdomTextBox.Text;
+            Program.character.Charisma = CharismaTextBox.Text;
+        }
     }
 }
