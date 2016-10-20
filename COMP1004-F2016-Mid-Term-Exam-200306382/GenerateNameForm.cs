@@ -19,9 +19,20 @@ namespace COMP1004_F2016_Mid_Term_Exam_200306382
 
         public void GenerateNames ()
         {
+            // grab a random string for firstnametextbox
+            Random random = new Random();
+            int randomNumber = random.Next(1, FirstNameListBox.Items.Count);
+            FirstNameListBox.Select();
+            FirstNameListBox.SelectedItem = FirstNameListBox.Items[randomNumber];
+            var str = FirstNameListBox.SelectedItem;
+            FirstNameTextBox.Text = str.ToString();
+            // grab a random string for lastnametextbox
             
-            Random rnd = new Random();
-            
+            int randomNumber2 = random.Next(1, lastNameListBox.Items.Count);
+            lastNameListBox.Select();
+            lastNameListBox.SelectedItem = lastNameListBox.Items[randomNumber];
+            var str2 = lastNameListBox.SelectedItem;
+            LastNameTextBox.Text = str2.ToString();
         }
 
         private void GenerateButton_Click(object sender, EventArgs e)

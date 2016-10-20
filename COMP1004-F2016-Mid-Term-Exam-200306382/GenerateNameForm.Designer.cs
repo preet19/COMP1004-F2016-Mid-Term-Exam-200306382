@@ -35,7 +35,7 @@
             this.FirstNameLabel2 = new System.Windows.Forms.Label();
             this.FirstNameTextBox = new System.Windows.Forms.TextBox();
             this.LastNameLabel = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lastNameListBox = new System.Windows.Forms.ListBox();
             this.FirstNameLabel = new System.Windows.Forms.Label();
             this.FirstNameListBox = new System.Windows.Forms.ListBox();
             this.NextButton = new System.Windows.Forms.Button();
@@ -50,7 +50,7 @@
             this.NameListGroupBox.Controls.Add(this.FirstNameLabel2);
             this.NameListGroupBox.Controls.Add(this.FirstNameTextBox);
             this.NameListGroupBox.Controls.Add(this.LastNameLabel);
-            this.NameListGroupBox.Controls.Add(this.listBox1);
+            this.NameListGroupBox.Controls.Add(this.lastNameListBox);
             this.NameListGroupBox.Controls.Add(this.FirstNameLabel);
             this.NameListGroupBox.Controls.Add(this.FirstNameListBox);
             this.NameListGroupBox.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,11 +113,11 @@
             this.LastNameLabel.TabIndex = 3;
             this.LastNameLabel.Text = "Last Names";
             // 
-            // listBox1
+            // lastNameListBox
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 18;
-            this.listBox1.Items.AddRange(new object[] {
+            this.lastNameListBox.FormattingEnabled = true;
+            this.lastNameListBox.ItemHeight = 18;
+            this.lastNameListBox.Items.AddRange(new object[] {
             "Adams",
             "Allen",
             "Anderson",
@@ -168,11 +168,11 @@
             "Wilson",
             "Wright",
             "Young"});
-            this.listBox1.Location = new System.Drawing.Point(184, 51);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(152, 94);
-            this.listBox1.Sorted = true;
-            this.listBox1.TabIndex = 2;
+            this.lastNameListBox.Location = new System.Drawing.Point(184, 51);
+            this.lastNameListBox.Name = "lastNameListBox";
+            this.lastNameListBox.Size = new System.Drawing.Size(152, 94);
+            this.lastNameListBox.Sorted = true;
+            this.lastNameListBox.TabIndex = 2;
             // 
             // FirstNameLabel
             // 
@@ -279,7 +279,7 @@
 
         private System.Windows.Forms.GroupBox NameListGroupBox;
         private System.Windows.Forms.Label LastNameLabel;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lastNameListBox;
         private System.Windows.Forms.Label FirstNameLabel;
         private System.Windows.Forms.ListBox FirstNameListBox;
         private System.Windows.Forms.Label LastNameLabel2;
