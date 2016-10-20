@@ -7,9 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ 	App name = Race and class
+    Author's name = Dilpreet Singh
+    Student	ID = 200306382
+    App	Creation Date = 20/10/2016
+    App description = This program generate random names display abilities and race
+ */
 namespace COMP1004_F2016_Mid_Term_Exam_200306382
 {
+    
     public partial class FinalForm : Form
     {
         public RaceAndClassForm previousForm { get; set; }
@@ -18,6 +25,8 @@ namespace COMP1004_F2016_Mid_Term_Exam_200306382
         {
             InitializeComponent();
         }
+
+        
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {

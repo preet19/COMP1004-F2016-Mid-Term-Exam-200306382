@@ -7,7 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ 	App name = Race and class
+    Author's name = Dilpreet Singh
+    Student	ID = 200306382
+    App	Creation Date = 20/10/2016
+    App description = This program generate random names display abilities and race
+ */
 namespace COMP1004_F2016_Mid_Term_Exam_200306382
 {
     public partial class GenerateNameForm : Form
@@ -17,6 +23,9 @@ namespace COMP1004_F2016_Mid_Term_Exam_200306382
             InitializeComponent();
         }
 
+        /*
+         * generate random data by looping through listbox
+        */
         public void GenerateNames ()
         {
             // grab a random string for firstnametextbox
@@ -37,6 +46,7 @@ namespace COMP1004_F2016_Mid_Term_Exam_200306382
 
         private void GenerateButton_Click(object sender, EventArgs e)
         {
+            // call random method
             GenerateNames();
             Program.character.FirstName = FirstNameTextBox.Text;
             Program.character.LastName = LastNameTextBox.Text;
@@ -45,6 +55,7 @@ namespace COMP1004_F2016_Mid_Term_Exam_200306382
 
         private void GenerateNameForm_Load(object sender, EventArgs e)
         {
+            //call random method
             GenerateNames();
         }
 
@@ -55,6 +66,7 @@ namespace COMP1004_F2016_Mid_Term_Exam_200306382
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            // close current form and display ability form
             AbilityGeneratorForm AbilityGeneratorForm = new AbilityGeneratorForm();
             AbilityGeneratorForm.Show();
             this.Hide();
