@@ -43,9 +43,25 @@ namespace COMP1004_F2016_Mid_Term_Exam_200306382
 
         private void RaceRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            RadioButton selectedRace = (RadioButton)sender;
+            
 
-            this._selectedRace = selectedRace.Text;
+            if (HumanRadioButton.Checked)
+            {
+                pictureBox1.Name = "Human_Male";
+            }
+            else if (ElfRadioButton.Checked)
+            {
+                pictureBox1.Name = "Elf_Male";
+            }
+            else if (DwarfRadioButton.Checked)
+            {
+                pictureBox1.Name = "dwarf_Male";
+            }
+            else if (HalflingRadioButton.Checked)
+            {
+                pictureBox1.Name = "Halfling_Male";
+            }
+
         }
 
         private void NextButton_Click(object sender, EventArgs e)
